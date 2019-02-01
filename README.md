@@ -15,10 +15,11 @@ to connect to the target databases via openvpn.
   | /etc/barman.conf (File) | Main Barmanc Configuration. If the file does not exist on start a default barman configuration file is provided. | 
   | /etc/openvpn/ | Directory of the openvpn configuration files. |
   | /etc/ssh/ | Directory of the ssh server configuration. If this directory is empty on start a default ssh server configuration is provided. |
-  | /backup | Example Backup directory. |
   | /etc/exim4/update-exim3.conf.conf | exim4 configuration file |
   | /etc/exim4/password.client | exim4 credentials file |
-  | /var/log/apache2 | Logging directory |
+  | /var/log | Logging directory |
+  | /var/lib/barman | Storage directroy of barman |
+  | /var/spool/cron/crontabs | Directory of cronfiles to automatically start barman jobs |
   
  ### Exim4 configuration
   For barman to send mails exim4 is used.
