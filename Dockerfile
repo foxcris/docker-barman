@@ -38,9 +38,13 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 
 #backup default directories
 RUN mv /etc/barman.conf /etc/barman.conf_default
+RUN mkdir /etc/barman.conf
 RUN mv /etc/barman.d /etc/barman.d_default
+RUN mkdir /etc/barman.d
 RUN mv /etc/openvpn /etc/openvpn_default
+RUN mkdir /etc/openvpn
 RUN mv /etc/ssh /etc/ssh_default
+RUN mkdir /etc/ssh
 
 VOLUME /etc/barman.d
 VOLUME /etc/barman.conf
