@@ -46,11 +46,8 @@ RUN mv /etc/ssh /etc/ssh_default
 RUN mkdir /etc/ssh
 
 VOLUME /etc/barman.d
-VOLUME /etc/barman.conf
 VOLUME /etc/openvpn
 VOLUME /etc/ssh
-VOLUME /etc/exim4/update-exim3.conf.conf
-VOLUME /etc/exim4/etc/exim4/password.client
 VOLUME /var/log
 VOLUME /var/lib/barman
 VOLUME /var/spool/cron/crontabs
