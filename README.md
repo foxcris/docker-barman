@@ -4,7 +4,8 @@ This container also provides:
  * openvpn
  * ssh server
  * exim4
-to connect to the target databases via openvpn.
+
+to connect to the target databases via openvpn and send mail notifications.
 
 ## Configuration
  
