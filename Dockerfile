@@ -22,7 +22,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main' > /etc/
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get install -y barman  && apt-get clean
 
 #install additional packages for barman
-RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get install -y openssh-client rsync postgresql-client-9.4 postgresql-client-9.5 postgresql-client-9.6  && apt-get clean
+RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get install -y openssh-client rsync postgresql-client && apt-get clean
 
 #install openvpn
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get install -y openvpn && apt-get clean
